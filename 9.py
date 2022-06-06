@@ -1,8 +1,11 @@
 string = ""
 string = input()
 
-list1 = string.split()
-for i in range(0,len(list1)):
-    list1[i] = int(list1[i])
+list1 = []
+nstr = ""
+for i in string:
+    list1.append(i)
 list1.sort()
-print(list1)
+for i in list1:
+    nstr+=i
+print(nstr)
